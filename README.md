@@ -1,4 +1,4 @@
-# Final Project 2 | Kelompok 6 | Landig Page
+# Final Project 2 | Kelompok 6 | Landing Page
 
 Status: In progress
 
