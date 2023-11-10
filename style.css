@@ -159,6 +159,10 @@ section .button {
     font-size: 3em;
 }
 
+.text-content:first-child p {
+    line-height: 2em;
+}
+
 .text-content:first-child button {
     width: 200px;
     height: 65px;
@@ -186,16 +190,16 @@ section .button {
 }
 
 /* card 1 */
-.card1,
-.card8 {
+.hero-section .card1,
+.hero-section .card8 {
     width: 75px;
     height: 75px;
     border-radius: 20px;
     background-color: white;
 }
 
-.card1 img,
-.card8 img {
+.hero-section .card1 img,
+.hero-section .card8 img {
     position: relative;
     height: 30px;
     top: 50%;
@@ -204,10 +208,10 @@ section .button {
 }
 
 /* card 2 */
-.card2 .card-content,
-.card4 .card-content,
-.card6 .card-content,
-.card7 .card-content {
+.hero-section .card2 .card-content,
+.hero-section .card4 .card-content,
+.hero-section .card6 .card-content,
+.hero-section .card7 .card-content {
     width: 350px;
     height: 100px;
     border-radius: 20px;
@@ -217,8 +221,8 @@ section .button {
 
 }
 
-.card2 .card-content .progress img,
-.card5 .card-content .progress img {
+.hero-section .card2 .card-content .progress img,
+.hero-section .card5 .card-content .progress img {
     position: relative;
     top: 50%;
     left: 50%;
@@ -228,8 +232,8 @@ section .button {
     border-radius: 100px;
 }
 
-.card2 .card-content .progress,
-.card5 .card-content .progress {
+.hero-section .card2 .card-content .progress,
+.hero-section .card5 .card-content .progress {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -237,8 +241,8 @@ section .button {
     animation: infinite circle-progress 2s;
 }
 
-.card2 .card-content .progress:hover,
-.card5 .card-content .progress:hover {
+.hero-section .card2 .card-content .progress:hover,
+.hero-section .card5 .card-content .progress:hover {
     animation: none;
     cursor: pointer;
     background:
@@ -246,27 +250,27 @@ section .button {
         conic-gradient(var(--primary) 25%, var(---secondary) 0);
 }
 
-.card2 .card-content .text-content p:first-child,
-.card3 .card-content .text-content p:first-child,
-.card4 .card-content .text-content p:first-child,
-.card6 .card-content .text-content p:first-child,
-.card7 .card-content .text-content p:first-child {
+.hero-section .card2 .card-content .text-content p:first-child,
+.hero-section .card3 .card-content .text-content p:first-child,
+.hero-section .card4 .card-content .text-content p:first-child,
+.hero-section .card6 .card-content .text-content p:first-child,
+.hero-section .card7 .card-content .text-content p:first-child {
     font-weight: 700;
 }
 
-.card2 .card-content .text-content p:last-child,
-.card3 .card-content .text-content p:last-child,
-.card4 .card-content .text-content p:nth-child(2),
-.card4 .card-content .text-content p:nth-child(3),
-.card6 .card-content .text-content p:nth-child(2),
-.card6 .card-content .text-content p:nth-child(3),
-.card7 .card-content .text-content p:last-child {
+.hero-section .card2 .card-content .text-content p:last-child,
+.hero-section .card3 .card-content .text-content p:last-child,
+.hero-section .card4 .card-content .text-content p:nth-child(2),
+.hero-section .card4 .card-content .text-content p:nth-child(3),
+.hero-section .card6 .card-content .text-content p:nth-child(2),
+.hero-section .card6 .card-content .text-content p:nth-child(3),
+.hero-section .card7 .card-content .text-content p:last-child {
     margin-top: 7.4px;
     font-size: 0.75em;
 }
 
 /* card 3 */
-.card3 .card-content {
+.hero-section .card3 .card-content {
     width: 276px;
     height: 160px;
     border-radius: 25px;
@@ -276,15 +280,15 @@ section .button {
     justify-content: space-evenly;
 }
 
-.card3 .card-content div:first-child {
+.hero-section .card3 .card-content div:first-child {
     display: flex;
     align-items: center;
 }
 
-.card3 .card-content .icon,
-.card4 .card-content .icon,
-.card6 .card-content .icon,
-.card7 .card-content .icon {
+.hero-section .card3 .card-content .icon,
+.hero-section .card4 .card-content .icon,
+.hero-section .card6 .card-content .icon,
+.hero-section .card7 .card-content .icon {
     width: 60px;
     height: 60px;
     margin: 0 20px;
@@ -294,11 +298,11 @@ section .button {
     justify-content: center;
 }
 
-.card3 .card-content .icon {
+.hero-section .card3 .card-content .icon {
     border: 3px solid var(--primary);
 }
 
-.card3 .card-content .meeting-parts {
+.hero-section .card3 .card-content .meeting-parts {
     display: flex;
     margin: 0 20px;
 }
@@ -332,16 +336,16 @@ section .button {
 }
 
 /* card 4 */
-.card4 .card-content .icon,
-.card6 .card-content .icon,
-.card7 .card-content .icon {
+.hero-section .card4 .card-content .icon,
+.hero-section .card6 .card-content .icon,
+.hero-section .card7 .card-content .icon {
     position: relative;
     font-weight: 700;
     background-color: var(---secondary);
 }
 
-.card4 .card-content .icon .notif,
-.card6 .card-content .icon .notif {
+.hero-section .card4 .card-content .icon .notif,
+.hero-section .card6 .card-content .icon .notif {
     position: absolute;
     top: 0;
     right: 0;
@@ -355,21 +359,21 @@ section .button {
     background-color: var(--primary);
 }
 
-.card4 .card-content .icon .notif p,
-.card6 .card-content .icon .notif p {
+.hero-section .card4 .card-content .icon .notif p,
+.hero-section .card6 .card-content .icon .notif p {
     font-size: 0.375em;
     color: white;
 }
 
-.card4 .card-content .text-content,
-.card6 .card-content .text-content {
+.hero-section .card4 .card-content .text-content,
+.hero-section .card6 .card-content .text-content {
     position: relative;
     width: 230px;
     height: 45px;
 }
 
-.card4 .card-content .text-content p:nth-child(3),
-.card6 .card-content .text-content p:nth-child(3) {
+.hero-section .card4 .card-content .text-content p:nth-child(3),
+.hero-section .card6 .card-content .text-content p:nth-child(3) {
     position: absolute;
     top: 0;
     right: 0;
@@ -377,7 +381,7 @@ section .button {
 }
 
 /* card 5 */
-.card5 .card-content {
+.hero-section .card5 .card-content {
     position: absolute;
     top: 75px;
     left: 400px;
@@ -392,36 +396,36 @@ section .button {
 
 }
 
-.card5 .card-content .progress:hover {
+.hero-section .card5 .card-content .progress:hover {
     background:
         radial-gradient(closest-side, white 90%, transparent 80% 100%),
         conic-gradient(var(--primary) 75%, var(---secondary) 0);
 }
 
-.card5 .card-content .progress {
+.hero-section .card5 .card-content .progress {
     margin-top: 0;
 }
 
-.card5 .card-content .text-content p {
+.hero-section .card5 .card-content .text-content p {
     font-size: 0.75em;
 }
 
 /* card 6 */
-.card6 .card-content {
+.hero-section .card6 .card-content {
     position: absolute;
     bottom: 220px;
     left: 300px;
 }
 
 /* card 7 */
-.card7 .card-content {
+.hero-section .card7 .card-content {
     position: absolute;
     bottom: 95px;
     left: 400px;
 }
 
 /* card 8 */
-.card8 {
+.hero-section .card8 {
     position: absolute;
     bottom: -5px;
     left: 375px;
@@ -431,7 +435,7 @@ section .button {
 .icon-section {
     display: flex;
     justify-content: space-between;
-    margin: 114px 100px;
+    margin: 150px 100px;
 }
 
 .card1-icon {
@@ -475,7 +479,7 @@ section .button {
     border-radius: 100px;
 }
 
-.lock-icon img{
+.lock-icon img {
     width: 28px;
     height: 42px;
     top: 29px;
@@ -504,6 +508,125 @@ section .button {
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
+}
+
+
+/* TEXT-RIGHT ICON */
+.text-right .txt-r-container {
+    display: flex;
+    margin: 0 100px;
+}
+
+.text-right .card {
+    width: 575px;
+    height: 575px;
+    border-radius: 60px;
+    background-color: var(---secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card 1 */
+.text-right .card1 .card-content,
+.text-right .card2 .card-content,
+.text-right .card3 .card-content {
+    width: 438px;
+    height: 125px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.text-right .card1 .card-content .icon,
+.text-right .card2 .card-content .icon,
+.text-right .card3 .card-content .icon {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: var(---secondary);
+}
+
+.text-right .card1 .card-content .icon p,
+.text-right .card2 .card-content .icon p,
+.text-right .card3 .card-content .icon p {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.text-right .card1 .card-content .icon .notif,
+.text-right .card2 .card-content .icon .notif,
+.text-right .card3 .card-content .icon .notif {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    outline: 2.5px solid white;
+    background-color: var(--primary);
+}
+
+.text-right .card1 .card-content .icon div p,
+.text-right .card2 .card-content .icon div p,
+.text-right .card3 .card-content .icon div p {
+    color: white;
+    font-size: 0.5em;
+    font-weight: bold;
+}
+
+.text-right .card1 .card-content .text-content,
+.text-right .card2 .card-content .text-content,
+.text-right .card3 .card-content .text-content {
+    position: relative;
+    width: 288px;
+}
+
+.text-right .card1 .card-content .text-content p:nth-child(1),
+.text-right .card2 .card-content .text-content p:nth-child(1),
+.text-right .card3 .card-content .text-content p:nth-child(1) {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.text-right .card1 .card-content .text-content p:nth-child(2),
+.text-right .card2 .card-content .text-content p:nth-child(2),
+.text-right .card3 .card-content .text-content p:nth-child(2) {
+    font-size: 0.9em;
+    margin-top: 7px;
+}
+
+.text-right .card1 .card-content .text-content p:nth-child(3),
+.text-right .card2 .card-content .text-content p:nth-child(3),
+.text-right .card3 .card-content .text-content p:nth-child(3) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.75em;
+}
+
+/* Card 2 */
+.text-right .card2 .card-content,
+.text-right .card3 .card-content {
+    transform: scale(0.8);
+    transform-origin: top;
+    margin-top: 25px;
+    margin-bottom: -25px;
+}
+
+/* Card 3 */
+.text-right .card3 .card-content {
+    transform: scale(0.6);
+    margin-bottom: -50px;
 }
 
 /* LANJUTIN DISINI GUYS */
