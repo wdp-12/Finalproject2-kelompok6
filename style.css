@@ -629,22 +629,276 @@ section .button {
     margin-bottom: -50px;
 }
 
-/* LANJUTIN DISINI GUYS */
+/* TEXT-CENTER ICON */
+.text-center .txt-c-container{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center .txt-c-container .text-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center .txt-c-container .text-content h1 {
+    width: 723px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.text-center .txt-c-container .text-content p {
+    margin-top: 25px;
+    width: 425px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+/* STYLING CARD BUAT TEXT CENTER DISINI YA */
 
 
+/* TEXT LEFT */
+.text-left .txt-l-container {
+    margin: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.text-left .txt-l-container .content h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 25px;
+    width: 365px;
+    height: 168px;
+}
 
+.text-left .txt-l-container .content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 50px;
+    width: 304px;
+    height: 52px;
+}
 
+.text-left .txt-l-container .content button {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom: 50px;
+    width: 200px;
+    height: 65px;
+}
 
+/* text left card */
+.text-left .card-container {
+    position: relative;
+    width: 575px;
+    height: 575px;
+    border-radius: 60px;
+    background-color: var(---secondary);
+    overflow: hidden;
+}
 
+/* card 1 */
+.text-left .card1 .card-content {
+    width: 276px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-left: 100px;
+}
 
+.text-left .card1 .card-content div:first-child,
+.text-left .card2 .card-content div:first-child, 
+.text-left .card3 .card-content div:first-child, 
+.text-left .card4 .card-content div:first-child, 
+.text-left .card5 .card-content div:first-child, 
+.text-left .card6 .card-content div:first-child {
+    display: flex;
+    align-items: center;
+    z-index: 3;
+}
 
+.text-left .card1 .card-content .icon,
+.text-left .card2 .card-content .icon,
+.text-left .card3 .card-content .icon,
+.text-left .card4 .card-content .icon,
+.text-left .card5 .card-content .icon,
+.text-left .card6 .card-content .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--primary);
+}
 
+.text-left .card1 .card-content .text-content,
+.text-left .card2 .card-content .text-content,
+.text-left .card3 .card-content .text-content,
+.text-left .card4 .card-content .text-content,
+.text-left .card5 .card-content .text-content,
+.text-left .card6 .card-content .text-content {
+    width: 118px;
+    height: 45px;
+}
 
+.text-left .card1 .card-content .text-content h5,
+.text-left .card2 .card-content .text-content h5,
+.text-left .card3 .card-content .text-content h5,
+.text-left .card4 .card-content .text-content h5,
+.text-left .card5 .card-content .text-content h5,
+.text-left .card6 .card-content .text-content h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 3px;
+}
 
+.text-left .card1 .card-content .text-content p,
+.text-left .card2 .card-content .text-content p,
+.text-left .card3 .card-content .text-content p,
+.text-left .card4 .card-content .text-content p,
+.text-left .card5 .card-content .text-content p,
+.text-left .card6 .card-content .text-content p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+}
 
+.text-left .card1 .card-content .meeting-parts,
+.text-left .card2 .card-content .meeting-parts,
+.text-left .card3 .card-content .meeting-parts,
+.text-left .card4 .card-content .meeting-parts,
+.text-left .card5 .card-content .meeting-parts,
+.text-left .card6 .card-content .meeting-parts {
+    display: flex;
+    margin: 0 20px;
+}
 
+.text-left .meeting-parts div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.625em;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: var(---secondary);
+}
 
+.text-left .meeting-parts div:nth-child(2) {
+    position: relative;
+    left: -10px;
+    z-index: 2;
+}
+
+.text-left .meeting-parts div:nth-child(3) {
+    position: relative;
+    left: -20px;
+    z-index: 1;
+}
+
+.text-left .meeting-parts div:last-child {
+    position: relative;
+    left: -30px;
+}
+
+/* card 2 */
+.text-left .card2 .card-content,
+.text-left .card3 .card-content {
+    width: 276px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    margin-left: 100px;
+}
+
+.text-left .meeting-parts div:nth-child(2) {
+    position: relative;
+    left: -10px;
+    z-index: 2;
+}
+
+/* card 4 */
+.text-left .card4 .card-content {
+    position: absolute;
+    top: 100px;
+    left: 401px;
+    width: 276px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.text-left .meeting-parts div:nth-child(2) {
+    position: relative;
+    left: -10px;
+    z-index: 2;
+}
+
+.text-left .meeting-parts div:nth-child(3) {
+    position: relative;
+    left: -20px;
+    z-index: 1;
+}
+
+/* card 5 */
+.text-left .card5 .card-content {
+    position: absolute;
+    top: 285px;
+    left: 401px;
+    width: 276px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* card 6 */
+.text-left .card6 .card-content {
+    position: absolute;
+    top: 470px;
+    left: 401px;
+    width: 276px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* LANJUTIN DISINI YA */
+/* --- KALAU MAU STYLING CARD BUAT TEXT CENTER, SCROLL KE ATAS DULU HEHE --- */
 
 
 
