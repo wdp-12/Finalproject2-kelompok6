@@ -662,8 +662,413 @@ section .button {
     text-align: center;
 }
 
-/* STYLING CARD BUAT TEXT CENTER DISINI YA */
+/* CARD TEXT-CENTER */
+.text-center .card-container {
+    position: relative;
+    width: auto;
+    height: 575px;
+    margin: 100px;
+    border-radius: 60px;
+    background-color: var(---secondary);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+}
 
+/* card 1 */
+.text-center .card1 {
+    margin-top: 55px;
+    margin-left: 482px;
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.text-center .card1 img {
+    position: relative;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* card 2 */
+.text-center .card2 .card-content {
+    width: 276px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    margin-left: 482px;
+}
+
+.text-center .card2 .card-content div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.text-center .card2 .card-content .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--primary);
+}
+
+.text-center .card2 .card-content .text-content {
+    width: 129px;
+    height: 45px;
+}
+
+.text-center .card2 .card-content .text-content h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 3px;
+}
+
+.text-center .card2 .card-content .text-content p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.text-center .card2 .card-content .meeting-parts {
+    display: flex;
+    margin: 0 20px;
+}
+
+.text-center .meeting-parts div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.625em;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: var(---secondary);
+}
+
+.text-center .meeting-parts div:nth-child(2) {
+    position: relative;
+    left: -10px;
+}
+
+.text-center .meeting-parts div:nth-child(3) {
+    position: relative;
+    left: -20px;
+}
+
+.text-center .meeting-parts div:last-child {
+    position: relative;
+    left: -30px;
+}
+
+/* card 3 */
+.text-center .card3 .card-content {
+    width: 350px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 482px;
+}
+
+.text-center .card3 .card-content .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    position: relative;
+    font-weight: 700;
+    background-color: var(---secondary);
+}
+
+.text-center .card3 .card-content .icon p {
+    font-size: 18px;
+}
+
+.text-center .card3 .card-content .icon .notif {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: var(--primary);
+}
+
+.text-center .card3 .card-content .icon .notif p {
+    font-size: 0.375em;
+    color: white;
+}
+
+.text-center .card3 .card-content .text-content {
+    position: relative;
+    width: 230px;
+    height: 45px;
+}
+
+.text-center .card3 .card-content .text-content p:first-child {
+    font-weight: 700;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center .card3 .card-content .text-content p:nth-child(2) {
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.text-center .card3 .card-content .text-content p:nth-child(3) {
+    position: absolute;
+    font-size: 10px;
+    font-weight: 400;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+/* card 4 */
+.text-center .card4 .card-content {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 482px;
+    width: 130px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-center .card4 .card-content .progress img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: var(---secondary);
+    border-radius: 100px;
+}
+
+.text-center .card4 .card-content .progress {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 20px;
+    animation: infinite circle-progress 2s;
+}
+
+.text-center .card4 .card-content .progress:hover {
+    animation: none;
+    cursor: pointer;
+    background:
+        radial-gradient(closest-side, white 90%, transparent 80% 100%),
+        conic-gradient(var(--primary) 75%, var(---secondary) 0);
+}
+
+.text-center .card4 .card-content .progress {
+    margin-top: 0;
+}
+
+.text-center .card4 .card-content .text-content p {
+    font-size: 0.75em;
+}
+
+/* card 5 */
+.text-center .card5 .card-content {
+    position: absolute;
+    width: 350px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    top: 30px;
+    left: 583px;
+}
+
+.text-center .card5 .card-content .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    position: relative;
+    font-weight: 700;
+    background-color: var(---secondary);
+}
+
+.text-center .card5 .card-content .icon p {
+    font-size: 18px;
+}
+
+.text-center .card5 .card-content .icon .notif {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: var(--primary);
+}
+
+.text-center .card5 .card-content .icon .notif p {
+    font-size: 0.375em;
+    color: white;
+}
+
+.text-center .card5 .card-content .text-content {
+    position: relative;
+    width: 230px;
+    height: 45px;
+}
+
+.text-center .card5 .card-content .text-content p:first-child {
+    font-weight: 700;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center .card5 .card-content .text-content p:nth-child(2) {
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.text-center .card5 .card-content .text-content p:nth-child(3) {
+    position: absolute;
+    font-size: 10px;
+    font-weight: 400;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+/* card 6 */
+.text-center .card6 .card-content {
+    position: absolute;
+    width: 350px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    top: 155px;
+    left: 783px;
+}
+
+.text-center .card6 .card-content .progress img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: var(---secondary);
+    border-radius: 100px;
+}
+
+.text-center .card6 .card-content .progress {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 20px;
+    animation: infinite circle-progress 2s;
+}
+
+.text-center .card6 .card-content .progress:hover {
+    animation: none;
+    cursor: pointer;
+    background:
+        radial-gradient(closest-side, white 90%, transparent 80% 100%),
+        conic-gradient(var(--primary) 25%, var(---secondary) 0);
+}
+
+.text-center .card6 .card-content .text-content p:first-child,
+.text-center .card7 .card-content .text-content p:first-child {
+    font-weight: 700;
+}
+
+.text-center .card6 .card-content .text-content p:last-child,
+.text-center .card7 .card-content .text-content p:last-child {
+    margin-top: 7.4px;
+    font-size: 0.75em;
+}
+
+/* card 7 */
+.text-center .card7 .card-content {
+    position: absolute;
+    top: 270px;
+    left: 107px;
+    width: 350px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.text-center .card7 .card-content .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-weight: 700;
+    background-color: var(---secondary);
+}
+
+/* card 8 */
+.text-center .card8 {
+    position: absolute;
+    top: 395px;
+    left: 382px;
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.text-center .card8 img {
+    position: relative;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /* TEXT LEFT */
 .text-left .txt-l-container {
