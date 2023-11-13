@@ -1305,20 +1305,175 @@ section .button {
 /* LANJUTIN DISINI YA */
 /* --- KALAU MAU STYLING CARD BUAT TEXT CENTER, SCROLL KE ATAS DULU HEHE --- */
 
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .flex-container .card1:hover {
+    filter: drop-shadow(3px 3px 5px #00000030);
+    transform: scale(1.1);
+    cursor: pointer;
+    outline: solid 3px var(--primary);
+    background-color: #fff;
+  }
+  .flex-container > div {
+    background-color: var(---secondary);
+    width: 280px;
+    height: 280px;
+    margin-left: 100px;
+    border-radius: 25px;
+    justify-content: center;
+  }
+.flex-container .card1 .card-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 274px;
+    height: 280px;
+    margin-top: 50px;
+}
+.flex-container .card1 .card-content p {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.flex-container .card1 .card-content h1 {
+    font-weight: 700;
+    font-size: 56px;
+    text-align: center;
+}
+.flex-container .card1 .card-content button {
+    width: 135px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 1em;
+    border-radius: 100px;
+    transition: all 0.1s;
+    margin-top: 5px;
+}
+.flex-container .card1 .card-content button:hover {
+    filter: drop-shadow(3px 3px 5px #00000030);
+    transform: scale(1.1);
+    cursor: pointer;
+    outline: solid 3px var(--primary);
+}
+/* styling untuk card2 pircing section */
+.flex-container .card2:hover {
+    filter: drop-shadow(3px 3px 5px #00000030);
+    transform: scale(1.1);
+    cursor: pointer;
+    outline: solid 3px var(--primary);
+    background-color: #fff;
+}
+.flex-container .card2 .card-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 274px;
+    height: 280px;
+    margin-top: 50px;
+}
+.flex-container .card2 .card-content p {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.flex-container .card2 .card-content h1 {
+    font-weight: 700;
+    font-size: 56px;
+    text-align: center;
+}
+.flex-container .card2 .card-content button {
+    width: 135px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 1em;
+    border-radius: 100px;
+    transition: all 0.1s;
+    margin-top: 5px;
+}
+.flex-container .card2 .card-content button:hover {
+    filter: drop-shadow(3px 3px 5px #00000030);
+    transform: scale(1.1);
+    cursor: pointer;
+    outline: solid 3px var(--primary);
+}
+/* styling untuk card3 pircing section */
+.flex-container .card3:hover {
+    filter: drop-shadow(3px 3px 5px #00000030);
+    transform: scale(1.1);
+    cursor: pointer;
+    outline: solid 3px var(--primary);
+    background-color: #fff;
+}
+.flex-container .card3 .card-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 274px;
+    height: 280px;
+    margin-top: 50px;
+}
+.flex-container .card3 .card-content p {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.flex-container .card3 .card-content h1 {
+    font-weight: 700;
+    font-size: 56px;
+    text-align: center;
+}
+.flex-container .card3 .card-content button {
+    width: 135px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 1em;
+    border-radius: 100px;
+    transition: all 0.1s;
+    margin-top: 5px;
+}
+.flex-container .card3 .card-content button:hover {
+    filter: drop-shadow(3px 3px 5px #00000030);
+    transform: scale(1.1);
+    cursor: pointer;
+    outline: solid 3px var(--primary);
+}
 
+.Newsletter-section .container {
+    background-color: var(---secondary);
+    width: 1240px;
+    height: 383px;
+    margin-left: 100px;
+    margin-top: 50px;
+    border-radius: 25px;
+    align-items: center;
+}
+.Newsletter-section .container .text-content {
+    margin-top: 25px;
+}
 
+input[type=email] {
+    width: 500px;
+    height: 65px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: white;
+  }
 
+section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+  }
 
-
-
-
-
-
-
-
-
-
-
+section > div {
+    margin-left: 100px;
+    justify-content: center;
+}
 
 
 
