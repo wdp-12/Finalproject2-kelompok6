@@ -1302,185 +1302,233 @@ section .button {
     justify-content: space-evenly;
 }
 
-/* LANJUTIN DISINI YA */
-/* --- KALAU MAU STYLING CARD BUAT TEXT CENTER, SCROLL KE ATAS DULU HEHE --- */
-
-.flex-container {
+/* SECTION PRICING  */
+.pricing .pricing-container{
+    margin-top: 150px;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.pricing .pricing-container .text-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing .pricing-container .text-content h1 {
+    width: 723px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.pricing .pricing-container .text-content p {
     margin-top: 25px;
-  }
-  .flex-container .card1:hover {
-    filter: drop-shadow(3px 3px 5px #00000030);
-    transform: scale(1.1);
-    cursor: pointer;
-    outline: solid 3px var(--primary);
-    background-color: #fff;
-  }
-  .flex-container > div {
+    width: 365px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+/* card pricing */
+.card-pricing {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    margin-bottom: 100px;
+    gap: 50px;
+}
+
+.card-pricing .card1,
+.card-pricing .card2,
+.card-pricing .card3 {
+    width: 380px;
+    height: 380px;
+    padding: 50px 53px;
+    border-radius: 60px;
+    border: 2px solid white;
     background-color: var(---secondary);
-    width: 280px;
-    height: 280px;
-    margin-left: 100px;
-    border-radius: 25px;
-    justify-content: center;
-  }
-.flex-container .card1 .card-content {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 274px;
-    height: 280px;
-    margin-top: 50px;
 }
-.flex-container .card1 .card-content p {
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-}
-.flex-container .card1 .card-content h1 {
-    font-weight: 700;
-    font-size: 56px;
-    text-align: center;
-}
-.flex-container .card1 .card-content button {
-    width: 135px;
-    height: 50px;
-    font-weight: 700;
-    font-size: 1em;
-    border-radius: 100px;
-    transition: all 0.1s;
-    margin-top: 5px;
-}
-.flex-container .card1 .card-content button:hover {
+
+.card-pricing .card1:hover,
+.card-pricing .card2:hover,
+.card-pricing .card3:hover {
     filter: drop-shadow(3px 3px 5px #00000030);
     transform: scale(1.1);
     cursor: pointer;
     outline: solid 3px var(--primary);
+    background-color: white;
 }
-/* styling untuk card2 pircing section */
-.flex-container .card2:hover {
-    filter: drop-shadow(3px 3px 5px #00000030);
-    transform: scale(1.1);
-    cursor: pointer;
-    outline: solid 3px var(--primary);
-    background-color: #fff;
-}
-.flex-container .card2 .card-content {
+
+.card-pricing .card1 .card-content,
+.card-pricing .card2 .card-content,
+.card-pricing .card3 .card-content {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 274px;
-    height: 280px;
-    margin-top: 50px;
 }
-.flex-container .card2 .card-content p {
+
+.card-pricing .card1 .card-content h3,
+.card-pricing .card2 .card-content h3,
+.card-pricing .card3 .card-content h3 {
+    font-size: 25px;
     font-weight: 400;
-    font-size: 20px;
-    text-align: center;
 }
-.flex-container .card2 .card-content h1 {
-    font-weight: 700;
+
+.card-pricing .card1 .card-content h1,
+.card-pricing .card2 .card-content h1,
+.card-pricing .card3 .card-content h1 {
     font-size: 56px;
-    text-align: center;
-}
-.flex-container .card2 .card-content button {
-    width: 135px;
-    height: 50px;
     font-weight: 700;
-    font-size: 1em;
-    border-radius: 100px;
-    transition: all 0.1s;
+    margin-top: 25px;
+}
+
+.card-pricing .card1 .card-content p,
+.card-pricing .card2 .card-content p,
+.card-pricing .card3 .card-content p {
+    font-size: 20px;
+    font-weight: 400;
     margin-top: 5px;
 }
-.flex-container .card2 .card-content button:hover {
-    filter: drop-shadow(3px 3px 5px #00000030);
-    transform: scale(1.1);
-    cursor: pointer;
-    outline: solid 3px var(--primary);
-}
-/* styling untuk card3 pircing section */
-.flex-container .card3:hover {
-    filter: drop-shadow(3px 3px 5px #00000030);
-    transform: scale(1.1);
-    cursor: pointer;
-    outline: solid 3px var(--primary);
-    background-color: #fff;
-}
-.flex-container .card3 .card-content {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
+.card-pricing .card1 .card-content button,
+.card-pricing .card2 .card-content button,
+.card-pricing .card3 .card-content button {
     width: 274px;
-    height: 280px;
-    margin-top: 50px;
-}
-.flex-container .card3 .card-content p {
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-}
-.flex-container .card3 .card-content h1 {
+    height: 75px;
     font-weight: 700;
-    font-size: 56px;
-    text-align: center;
-}
-.flex-container .card3 .card-content button {
-    width: 135px;
-    height: 50px;
-    font-weight: 700;
-    font-size: 1em;
+    font-size: 25px;
     border-radius: 100px;
     transition: all 0.1s;
-    margin-top: 5px;
+    margin-top: 35px;
+    background: white;
 }
-.flex-container .card3 .card-content button:hover {
+
+.card-pricing .card1 .card-content button:hover,
+.card-pricing .card2 .card-content button:hover,
+.card-pricing .card3 .card-content button:hover {
     filter: drop-shadow(3px 3px 5px #00000030);
     transform: scale(1.1);
     cursor: pointer;
     outline: solid 3px var(--primary);
 }
 
-.Newsletter-section .container {
-    background-color: var(---secondary);
-    width: 1240px;
+/* NEWSLATER SIGN-UP */
+.sign-up .card-container {
+    width: auto;
     height: 383px;
-    margin-left: 100px;
-    margin-top: 50px;
-    border-radius: 25px;
+    margin: 150px 100px;
+    border-radius: 60px;
+    background-color: var(---secondary);
+    display: flex;
+    justify-content: center;
     align-items: center;
-}
-.Newsletter-section .container .text-content {
-    margin-top: 25px;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-input[type=email] {
+.sign-up .card-container .text-content {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up .card-container .text-content h1 {
+    width: 569px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.sign-up .card-container .text-content p {
+    margin-top: 25px;
+    width: 348px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.sign-up .wrapper {
+    position: relative;
     width: 500px;
     height: 65px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 20px;
-    background-color: white;
-  }
+    margin-top: 35px;
+    margin-bottom: 75px;
+    display: flex;
+}
 
-section {
+.sign-up .wrapper input {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 18px 25px;
+    border-radius: 17.5px;
+    background-color: white;
+}
+
+.sign-up .wrapper input::placeholder {
+    color: var(--primary);
+    opacity: 50%;
+}
+
+.sign-up .wrapper button {
+    position: absolute;
+    color: white;
+    background-color: var(--primary);
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    left: 445px;
+}
+
+/* FOOTER */
+footer section {
     display: flex;
     flex-direction: row;
-    margin-top: 25px;
-  }
+    justify-content: center;
+    gap: 150px;
+    margin-bottom: 75px;
+}
 
-section > div {
-    margin-left: 100px;
+footer section div {
+    width: 150px;
     justify-content: center;
 }
 
+footer section div h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 49px;
+    margin-bottom: 10px;
+}
 
+footer section div p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-bottom: 10px;
+}
 
-
-
-
-
+footer section div h1:hover,
+footer section div p:hover {
+    color: #234cadb1;
+    cursor: pointer;
+}
 
 
 
