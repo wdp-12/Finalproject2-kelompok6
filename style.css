@@ -16,7 +16,7 @@ html {
 
 :root {
     --primary: #234CAD;
-    ---secondary: #F2F6FF;
+    --secondary: #F2F6FF;
     --white: #F2F6FF;
 }
 
@@ -51,7 +51,7 @@ header section {
 }
 
 .btn-menu {
-    background-color: var(---secondary);
+    background-color: var(--secondary);
     width: 50px;
     height: 50px;
     display: flex;
@@ -130,7 +130,7 @@ section .button {
 
 .button #signUpButton {
     outline: none;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
 }
 
 /* MAIN SECTION / KONTEN */
@@ -141,7 +141,7 @@ section .button {
     height: 575px;
     margin: 100px;
     border-radius: 60px;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
     display: flex;
 }
 
@@ -159,6 +159,10 @@ section .button {
     font-size: 3em;
 }
 
+.text-content:first-child p {
+    line-height: 2em;
+}
+
 .text-content:first-child button {
     width: 200px;
     height: 65px;
@@ -166,7 +170,7 @@ section .button {
     font-weight: 700;
     border-radius: 100px;
     border: 3px solid var(--primary);
-    background-color: var(---secondary);
+    background-color: var(--secondary);
     transition: all 0.3s;
 }
 
@@ -186,16 +190,16 @@ section .button {
 }
 
 /* card 1 */
-.card1,
-.card8 {
+.hero-section .card1,
+.hero-section .card8 {
     width: 75px;
     height: 75px;
     border-radius: 20px;
     background-color: white;
 }
 
-.card1 img,
-.card8 img {
+.hero-section .card1 img,
+.hero-section .card8 img {
     position: relative;
     height: 30px;
     top: 50%;
@@ -204,10 +208,10 @@ section .button {
 }
 
 /* card 2 */
-.card2 .card-content,
-.card4 .card-content,
-.card6 .card-content,
-.card7 .card-content {
+.hero-section .card2 .card-content,
+.hero-section .card4 .card-content,
+.hero-section .card6 .card-content,
+.hero-section .card7 .card-content {
     width: 350px;
     height: 100px;
     border-radius: 20px;
@@ -217,19 +221,19 @@ section .button {
 
 }
 
-.card2 .card-content .progress img,
-.card5 .card-content .progress img {
+.hero-section .card2 .card-content .progress img,
+.hero-section .card5 .card-content .progress img {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
     border-radius: 100px;
 }
 
-.card2 .card-content .progress,
-.card5 .card-content .progress {
+.hero-section .card2 .card-content .progress,
+.hero-section .card5 .card-content .progress {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -237,36 +241,36 @@ section .button {
     animation: infinite circle-progress 2s;
 }
 
-.card2 .card-content .progress:hover,
-.card5 .card-content .progress:hover {
+.hero-section .card2 .card-content .progress:hover,
+.hero-section .card5 .card-content .progress:hover {
     animation: none;
     cursor: pointer;
     background:
         radial-gradient(closest-side, white 90%, transparent 80% 100%),
-        conic-gradient(var(--primary) 25%, var(---secondary) 0);
+        conic-gradient(var(--primary) 25%, var(--secondary) 0);
 }
 
-.card2 .card-content .text-content p:first-child,
-.card3 .card-content .text-content p:first-child,
-.card4 .card-content .text-content p:first-child,
-.card6 .card-content .text-content p:first-child,
-.card7 .card-content .text-content p:first-child {
+.hero-section .card2 .card-content .text-content p:first-child,
+.hero-section .card3 .card-content .text-content p:first-child,
+.hero-section .card4 .card-content .text-content p:first-child,
+.hero-section .card6 .card-content .text-content p:first-child,
+.hero-section .card7 .card-content .text-content p:first-child {
     font-weight: 700;
 }
 
-.card2 .card-content .text-content p:last-child,
-.card3 .card-content .text-content p:last-child,
-.card4 .card-content .text-content p:nth-child(2),
-.card4 .card-content .text-content p:nth-child(3),
-.card6 .card-content .text-content p:nth-child(2),
-.card6 .card-content .text-content p:nth-child(3),
-.card7 .card-content .text-content p:last-child {
+.hero-section .card2 .card-content .text-content p:last-child,
+.hero-section .card3 .card-content .text-content p:last-child,
+.hero-section .card4 .card-content .text-content p:nth-child(2),
+.hero-section .card4 .card-content .text-content p:nth-child(3),
+.hero-section .card6 .card-content .text-content p:nth-child(2),
+.hero-section .card6 .card-content .text-content p:nth-child(3),
+.hero-section .card7 .card-content .text-content p:last-child {
     margin-top: 7.4px;
     font-size: 0.75em;
 }
 
 /* card 3 */
-.card3 .card-content {
+.hero-section .card3 .card-content {
     width: 276px;
     height: 160px;
     border-radius: 25px;
@@ -276,15 +280,15 @@ section .button {
     justify-content: space-evenly;
 }
 
-.card3 .card-content div:first-child {
+.hero-section .card3 .card-content div:first-child {
     display: flex;
     align-items: center;
 }
 
-.card3 .card-content .icon,
-.card4 .card-content .icon,
-.card6 .card-content .icon,
-.card7 .card-content .icon {
+.hero-section .card3 .card-content .icon,
+.hero-section .card4 .card-content .icon,
+.hero-section .card6 .card-content .icon,
+.hero-section .card7 .card-content .icon {
     width: 60px;
     height: 60px;
     margin: 0 20px;
@@ -294,11 +298,11 @@ section .button {
     justify-content: center;
 }
 
-.card3 .card-content .icon {
+.hero-section .card3 .card-content .icon {
     border: 3px solid var(--primary);
 }
 
-.card3 .card-content .meeting-parts {
+.hero-section .card3 .card-content .meeting-parts {
     display: flex;
     margin: 0 20px;
 }
@@ -313,7 +317,7 @@ section .button {
     height: 40px;
     border-radius: 100px;
     border: 2px solid white;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
 }
 
 .meeting-parts div:nth-child(2) {
@@ -332,16 +336,16 @@ section .button {
 }
 
 /* card 4 */
-.card4 .card-content .icon,
-.card6 .card-content .icon,
-.card7 .card-content .icon {
+.hero-section .card4 .card-content .icon,
+.hero-section .card6 .card-content .icon,
+.hero-section .card7 .card-content .icon {
     position: relative;
     font-weight: 700;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
 }
 
-.card4 .card-content .icon .notif,
-.card6 .card-content .icon .notif {
+.hero-section .card4 .card-content .icon .notif,
+.hero-section .card6 .card-content .icon .notif {
     position: absolute;
     top: 0;
     right: 0;
@@ -355,21 +359,21 @@ section .button {
     background-color: var(--primary);
 }
 
-.card4 .card-content .icon .notif p,
-.card6 .card-content .icon .notif p {
+.hero-section .card4 .card-content .icon .notif p,
+.hero-section .card6 .card-content .icon .notif p {
     font-size: 0.375em;
     color: white;
 }
 
-.card4 .card-content .text-content,
-.card6 .card-content .text-content {
+.hero-section .card4 .card-content .text-content,
+.hero-section .card6 .card-content .text-content {
     position: relative;
     width: 230px;
     height: 45px;
 }
 
-.card4 .card-content .text-content p:nth-child(3),
-.card6 .card-content .text-content p:nth-child(3) {
+.hero-section .card4 .card-content .text-content p:nth-child(3),
+.hero-section .card6 .card-content .text-content p:nth-child(3) {
     position: absolute;
     top: 0;
     right: 0;
@@ -377,7 +381,7 @@ section .button {
 }
 
 /* card 5 */
-.card5 .card-content {
+.hero-section .card5 .card-content {
     position: absolute;
     top: 75px;
     left: 400px;
@@ -392,83 +396,1150 @@ section .button {
 
 }
 
-.card5 .card-content .progress:hover {
+.hero-section .card5 .card-content .progress:hover {
     background:
         radial-gradient(closest-side, white 90%, transparent 80% 100%),
-        conic-gradient(var(--primary) 75%, var(---secondary) 0);
+        conic-gradient(var(--primary) 75%, var(--secondary) 0);
 }
 
-.card5 .card-content .progress {
+.hero-section .card5 .card-content .progress {
     margin-top: 0;
 }
 
-.card5 .card-content .text-content p {
+.hero-section .card5 .card-content .text-content p {
     font-size: 0.75em;
 }
 
 /* card 6 */
-.card6 .card-content {
+.hero-section .card6 .card-content {
     position: absolute;
     bottom: 220px;
     left: 300px;
 }
 
 /* card 7 */
-.card7 .card-content {
+.hero-section .card7 .card-content {
     position: absolute;
     bottom: 95px;
     left: 400px;
 }
 
 /* card 8 */
-.card8 {
+.hero-section .card8 {
     position: absolute;
     bottom: -5px;
     left: 375px;
 }
 
+/* ICON SECTION */
+.icon-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 150px 100px;
+}
 
-/* LANJUTIN DISINI GUYS */
+.card1-icon {
+    display: flex;
+    width: 532px;
+    height: 100px;
+}
+
+.card2-icon {
+    display: flex;
+    margin-left: 155px;
+    width: 553px;
+    height: 100px;
+}
+
+.cloud-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: var(--secondary);
+    border-radius: 100px;
+}
+
+.cloud-icon img {
+    width: 44px;
+    height: 32px;
+    top: 34px;
+    left: 28px;
+    border: 3px;
+}
+
+.lock-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: var(--secondary);
+    border-radius: 100px;
+}
+
+.lock-icon img {
+    width: 28px;
+    height: 42px;
+    top: 29px;
+    left: 36px;
+    border: 3px;
+}
+
+.text-content-icon {
+    margin-left: 30px;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.text-content-icon .title {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 49px;
+}
+
+.text-content-icon p {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+}
 
 
+/* TEXT-RIGHT ICON */
+.text-right .txt-r-container {
+    display: flex;
+    margin: 0 100px;
+}
 
+.text-right .card {
+    width: 575px;
+    height: 575px;
+    border-radius: 60px;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+/* Card 1 */
+.text-right .card1 .card-content,
+.text-right .card2 .card-content,
+.text-right .card3 .card-content {
+    width: 438px;
+    height: 125px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
 
+.text-right .card1 .card-content .icon,
+.text-right .card2 .card-content .icon,
+.text-right .card3 .card-content .icon {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: var(--secondary);
+}
 
+.text-right .card1 .card-content .icon p,
+.text-right .card2 .card-content .icon p,
+.text-right .card3 .card-content .icon p {
+    font-weight: bold;
+    font-size: 1.4em;
+}
 
+.text-right .card1 .card-content .icon .notif,
+.text-right .card2 .card-content .icon .notif,
+.text-right .card3 .card-content .icon .notif {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    outline: 2.5px solid white;
+    background-color: var(--primary);
+}
 
+.text-right .card1 .card-content .icon div p,
+.text-right .card2 .card-content .icon div p,
+.text-right .card3 .card-content .icon div p {
+    color: white;
+    font-size: 0.5em;
+    font-weight: bold;
+}
 
+.text-right .card1 .card-content .text-content,
+.text-right .card2 .card-content .text-content,
+.text-right .card3 .card-content .text-content {
+    position: relative;
+    width: 288px;
+}
 
+.text-right .card1 .card-content .text-content p:nth-child(1),
+.text-right .card2 .card-content .text-content p:nth-child(1),
+.text-right .card3 .card-content .text-content p:nth-child(1) {
+    font-weight: bold;
+    font-size: 1.25em;
+}
 
+.text-right .card1 .card-content .text-content p:nth-child(2),
+.text-right .card2 .card-content .text-content p:nth-child(2),
+.text-right .card3 .card-content .text-content p:nth-child(2) {
+    font-size: 0.9em;
+    margin-top: 7px;
+}
 
+.text-right .card1 .card-content .text-content p:nth-child(3),
+.text-right .card2 .card-content .text-content p:nth-child(3),
+.text-right .card3 .card-content .text-content p:nth-child(3) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.75em;
+}
 
+/* Card 2 */
+.text-right .card2 .card-content,
+.text-right .card3 .card-content {
+    transform: scale(0.8);
+    transform-origin: top;
+    margin-top: 25px;
+    margin-bottom: -25px;
+}
 
+/* Card 3 */
+.text-right .card3 .card-content {
+    transform: scale(0.6);
+    margin-bottom: -50px;
+}
 
+/* TEXT-CENTER ICON */
+.text-center .txt-c-container {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.text-center .txt-c-container .text-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.text-center .txt-c-container .text-content h1 {
+    width: 723px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
 
+.text-center .txt-c-container .text-content p {
+    margin-top: 25px;
+    width: 425px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
 
+/* CARD TEXT-CENTER */
+.text-center .card-container {
+    position: relative;
+    width: auto;
+    height: 575px;
+    margin: 100px;
+    border-radius: 60px;
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+}
 
+/* card 1 */
+.text-center .card1 {
+    margin-top: 55px;
+    margin-left: 482px;
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    background-color: white;
+}
 
+.text-center .card1 img {
+    position: relative;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+/* card 2 */
+.text-center .card2 .card-content {
+    width: 276px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    margin-left: 482px;
+}
 
+.text-center .card2 .card-content div:first-child {
+    display: flex;
+    align-items: center;
+}
 
+.text-center .card2 .card-content .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--primary);
+}
 
+.text-center .card2 .card-content .text-content {
+    width: 129px;
+    height: 45px;
+}
 
+.text-center .card2 .card-content .text-content h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 3px;
+}
 
+.text-center .card2 .card-content .text-content p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+}
 
+.text-center .card2 .card-content .meeting-parts {
+    display: flex;
+    margin: 0 20px;
+}
 
+.text-center .meeting-parts div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.625em;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: var(--secondary);
+}
 
+.text-center .meeting-parts div:nth-child(2) {
+    position: relative;
+    left: -10px;
+}
 
+.text-center .meeting-parts div:nth-child(3) {
+    position: relative;
+    left: -20px;
+}
 
+.text-center .meeting-parts div:last-child {
+    position: relative;
+    left: -30px;
+}
 
+/* card 3 */
+.text-center .card3 .card-content {
+    width: 350px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 482px;
+}
 
+.text-center .card3 .card-content .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    position: relative;
+    font-weight: 700;
+    background-color: var(--secondary);
+}
 
+.text-center .card3 .card-content .icon p {
+    font-size: 18px;
+}
 
+.text-center .card3 .card-content .icon .notif {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: var(--primary);
+}
 
+.text-center .card3 .card-content .icon .notif p {
+    font-size: 0.375em;
+    color: white;
+}
 
+.text-center .card3 .card-content .text-content {
+    position: relative;
+    width: 230px;
+    height: 45px;
+}
 
+.text-center .card3 .card-content .text-content p:first-child {
+    font-weight: 700;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
 
+.text-center .card3 .card-content .text-content p:nth-child(2) {
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.text-center .card3 .card-content .text-content p:nth-child(3) {
+    position: absolute;
+    font-size: 10px;
+    font-weight: 400;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+/* card 4 */
+.text-center .card4 .card-content {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 482px;
+    width: 130px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-center .card4 .card-content .progress img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: var(--secondary);
+    border-radius: 100px;
+}
+
+.text-center .card4 .card-content .progress {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 20px;
+    animation: infinite circle-progress 2s;
+}
+
+.text-center .card4 .card-content .progress:hover {
+    animation: none;
+    cursor: pointer;
+    background:
+        radial-gradient(closest-side, white 90%, transparent 80% 100%),
+        conic-gradient(var(--primary) 75%, var(--secondary) 0);
+}
+
+.text-center .card4 .card-content .progress {
+    margin-top: 0;
+}
+
+.text-center .card4 .card-content .text-content p {
+    font-size: 0.75em;
+}
+
+/* card 5 */
+.text-center .card5 .card-content {
+    position: absolute;
+    width: 350px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    top: 30px;
+    left: 583px;
+}
+
+.text-center .card5 .card-content .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    position: relative;
+    font-weight: 700;
+    background-color: var(--secondary);
+}
+
+.text-center .card5 .card-content .icon p {
+    font-size: 18px;
+}
+
+.text-center .card5 .card-content .icon .notif {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: var(--primary);
+}
+
+.text-center .card5 .card-content .icon .notif p {
+    font-size: 0.375em;
+    color: white;
+}
+
+.text-center .card5 .card-content .text-content {
+    position: relative;
+    width: 230px;
+    height: 45px;
+}
+
+.text-center .card5 .card-content .text-content p:first-child {
+    font-weight: 700;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center .card5 .card-content .text-content p:nth-child(2) {
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.text-center .card5 .card-content .text-content p:nth-child(3) {
+    position: absolute;
+    font-size: 10px;
+    font-weight: 400;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+/* card 6 */
+.text-center .card6 .card-content {
+    position: absolute;
+    width: 350px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    top: 155px;
+    left: 783px;
+}
+
+.text-center .card6 .card-content .progress img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: var(--secondary);
+    border-radius: 100px;
+}
+
+.text-center .card6 .card-content .progress {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 20px;
+    animation: infinite circle-progress 2s;
+}
+
+.text-center .card6 .card-content .progress:hover {
+    animation: none;
+    cursor: pointer;
+    background:
+        radial-gradient(closest-side, white 90%, transparent 80% 100%),
+        conic-gradient(var(--primary) 25%, var(--secondary) 0);
+}
+
+.text-center .card6 .card-content .text-content p:first-child,
+.text-center .card7 .card-content .text-content p:first-child {
+    font-weight: 700;
+}
+
+.text-center .card6 .card-content .text-content p:last-child,
+.text-center .card7 .card-content .text-content p:last-child {
+    margin-top: 7.4px;
+    font-size: 0.75em;
+}
+
+/* card 7 */
+.text-center .card7 .card-content {
+    position: absolute;
+    top: 270px;
+    left: 107px;
+    width: 350px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.text-center .card7 .card-content .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-weight: 700;
+    background-color: var(--secondary);
+}
+
+/* card 8 */
+.text-center .card8 {
+    position: absolute;
+    top: 395px;
+    left: 382px;
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.text-center .card8 img {
+    position: relative;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* TEXT LEFT */
+.text-left .txt-l-container {
+    margin: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-left .txt-l-container .content h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 25px;
+    width: 365px;
+    height: 168px;
+}
+
+.text-left .txt-l-container .content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 50px;
+    width: 304px;
+    height: 52px;
+}
+
+.text-left .txt-l-container .content button {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom: 50px;
+    width: 200px;
+    height: 65px;
+}
+
+/* text left card */
+.text-left .card-container {
+    position: relative;
+    width: 575px;
+    height: 575px;
+    border-radius: 60px;
+    background-color: var(--secondary);
+    overflow: hidden;
+}
+
+/* card 1 */
+.text-left .card1 .card-content {
+    width: 276px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.text-left .card1 .card-content div:first-child,
+.text-left .card2 .card-content div:first-child,
+.text-left .card3 .card-content div:first-child,
+.text-left .card4 .card-content div:first-child,
+.text-left .card5 .card-content div:first-child,
+.text-left .card6 .card-content div:first-child {
+    display: flex;
+    align-items: center;
+    z-index: 3;
+}
+
+.text-left .card1 .card-content .icon,
+.text-left .card2 .card-content .icon,
+.text-left .card3 .card-content .icon,
+.text-left .card4 .card-content .icon,
+.text-left .card5 .card-content .icon,
+.text-left .card6 .card-content .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--primary);
+}
+
+.text-left .card1 .card-content .text-content,
+.text-left .card2 .card-content .text-content,
+.text-left .card3 .card-content .text-content,
+.text-left .card4 .card-content .text-content,
+.text-left .card5 .card-content .text-content,
+.text-left .card6 .card-content .text-content {
+    width: 118px;
+    height: 45px;
+}
+
+.text-left .card1 .card-content .text-content h5,
+.text-left .card2 .card-content .text-content h5,
+.text-left .card3 .card-content .text-content h5,
+.text-left .card4 .card-content .text-content h5,
+.text-left .card5 .card-content .text-content h5,
+.text-left .card6 .card-content .text-content h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 3px;
+}
+
+.text-left .card1 .card-content .text-content p,
+.text-left .card2 .card-content .text-content p,
+.text-left .card3 .card-content .text-content p,
+.text-left .card4 .card-content .text-content p,
+.text-left .card5 .card-content .text-content p,
+.text-left .card6 .card-content .text-content p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.text-left .card1 .card-content .meeting-parts,
+.text-left .card2 .card-content .meeting-parts,
+.text-left .card3 .card-content .meeting-parts,
+.text-left .card4 .card-content .meeting-parts,
+.text-left .card5 .card-content .meeting-parts,
+.text-left .card6 .card-content .meeting-parts {
+    display: flex;
+    margin: 0 20px;
+}
+
+.text-left .meeting-parts div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.625em;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: var(--secondary);
+}
+
+.text-left .meeting-parts div:nth-child(2) {
+    position: relative;
+    left: -10px;
+    z-index: 2;
+}
+
+.text-left .meeting-parts div:nth-child(3) {
+    position: relative;
+    left: -20px;
+    z-index: 1;
+}
+
+.text-left .meeting-parts div:last-child {
+    position: relative;
+    left: -30px;
+}
+
+/* card 2 */
+.text-left .card2 .card-content,
+.text-left .card3 .card-content {
+    width: 276px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    margin-left: 100px;
+}
+
+.text-left .meeting-parts div:nth-child(2) {
+    position: relative;
+    left: -10px;
+    z-index: 2;
+}
+
+/* card 4 */
+.text-left .card4 .card-content {
+    position: absolute;
+    top: 100px;
+    left: 401px;
+    width: 276px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.text-left .meeting-parts div:nth-child(2) {
+    position: relative;
+    left: -10px;
+    z-index: 2;
+}
+
+.text-left .meeting-parts div:nth-child(3) {
+    position: relative;
+    left: -20px;
+    z-index: 1;
+}
+
+/* card 5 */
+.text-left .card5 .card-content {
+    position: absolute;
+    top: 285px;
+    left: 401px;
+    width: 276px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* card 6 */
+.text-left .card6 .card-content {
+    position: absolute;
+    top: 470px;
+    left: 401px;
+    width: 276px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* SECTION PRICING  */
+.pricing .pricing-container {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing .pricing-container .text-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing .pricing-container .text-content h1 {
+    width: 723px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.pricing .pricing-container .text-content p {
+    margin-top: 25px;
+    width: 365px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+/* card pricing */
+.card-pricing {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    margin-bottom: 100px;
+    gap: 50px;
+}
+
+.card-pricing .card1,
+.card-pricing .card2,
+.card-pricing .card3 {
+    width: 380px;
+    height: 380px;
+    padding: 50px 53px;
+    border-radius: 60px;
+    transition: all 0.3s;
+}
+
+.card-pricing .card1,
+.card-pricing .card3 {
+    background-color: var(--secondary);
+}
+
+.card-pricing .card2 {
+    background-color: white;
+    outline: solid 3px var(--primary);
+}
+
+.card-pricing .card1:hover,
+.card-pricing .card2:hover,
+.card-pricing .card3:hover {
+    filter: drop-shadow(3px 3px 5px #00000030);
+    transform: scale(1.05);
+}
+
+.card-pricing .card1 .card-content,
+.card-pricing .card2 .card-content,
+.card-pricing .card3 .card-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-pricing .card1 .card-content h3,
+.card-pricing .card2 .card-content h3,
+.card-pricing .card3 .card-content h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.card-pricing .card1 .card-content h1,
+.card-pricing .card2 .card-content h1,
+.card-pricing .card3 .card-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.card-pricing .card1 .card-content p,
+.card-pricing .card2 .card-content p,
+.card-pricing .card3 .card-content p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.card-pricing .card1 .card-content button,
+.card-pricing .card2 .card-content button,
+.card-pricing .card3 .card-content button {
+    width: 274px;
+    height: 75px;
+    font-weight: 700;
+    font-size: 25px;
+    border-radius: 100px;
+    transition: all 0.1s;
+    margin-top: 35px;
+    background: white;
+    transition: all 0.3s;
+}
+
+.card-pricing .card2 .card-content button {
+    outline: solid 3px var(--primary);
+
+}
+
+.card-pricing .card1 .card-content button:hover,
+.card-pricing .card2 .card-content button:hover,
+.card-pricing .card3 .card-content button:hover {
+    filter: drop-shadow(3px 3px 5px #00000030);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* NEWSLATER SIGN-UP */
+.sign-up .card-container {
+    width: auto;
+    height: 383px;
+    margin: 150px 100px;
+    border-radius: 60px;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sign-up .card-container .text-content {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up .card-container .text-content h1 {
+    width: 569px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.sign-up .card-container .text-content p {
+    margin-top: 25px;
+    width: 348px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.sign-up .wrapper {
+    position: relative;
+    width: 500px;
+    height: 65px;
+    margin-top: 35px;
+    margin-bottom: 75px;
+    display: flex;
+}
+
+.sign-up .wrapper input {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 18px 25px;
+    border-radius: 17.5px;
+    background-color: white;
+}
+
+.sign-up .wrapper input::placeholder {
+    color: var(--primary);
+    opacity: 50%;
+}
+
+.sign-up .wrapper button {
+    position: absolute;
+    color: white;
+    background-color: var(--primary);
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    left: 445px;
+}
+
+/* FOOTER */
+footer section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+    margin-bottom: 75px;
+}
+
+footer section div {
+    width: 150px;
+    justify-content: center;
+}
+
+footer section div h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 49px;
+    margin-bottom: 10px;
+}
+
+footer section div p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-bottom: 10px;
+}
+
+footer section div h1:hover,
+footer section div p:hover {
+    color: #234cadb1;
+    cursor: pointer;
+}
 
 
 
@@ -482,36 +1553,36 @@ section .button {
     0% {
         background:
             radial-gradient(closest-side, white 90%, transparent 80% 100%),
-            conic-gradient(var(--primary) 0%, var(---secondary) 0);
+            conic-gradient(var(--primary) 0%, var(--secondary) 0);
     }
 
     20% {
         background:
             radial-gradient(closest-side, white 90%, transparent 80% 100%),
-            conic-gradient(var(--primary) 25%, var(---secondary) 0);
+            conic-gradient(var(--primary) 25%, var(--secondary) 0);
     }
 
     40% {
         background:
             radial-gradient(closest-side, white 90%, transparent 80% 100%),
-            conic-gradient(var(--primary) 50%, var(---secondary) 0);
+            conic-gradient(var(--primary) 50%, var(--secondary) 0);
     }
 
     65% {
         background:
             radial-gradient(closest-side, white 90%, transparent 80% 100%),
-            conic-gradient(var(--primary) 75%, var(---secondary) 0);
+            conic-gradient(var(--primary) 75%, var(--secondary) 0);
     }
 
     80% {
         background:
             radial-gradient(closest-side, white 90%, transparent 80% 100%),
-            conic-gradient(var(--primary) 100%, var(---secondary) 0);
+            conic-gradient(var(--primary) 100%, var(--secondary) 0);
     }
 
     100% {
         background:
             radial-gradient(closest-side, white 90%, transparent 80% 100%),
-            conic-gradient(var(--primary) 0%, var(---secondary) 0);
+            conic-gradient(var(--primary) 0%, var(--secondary) 0);
     }
 }
