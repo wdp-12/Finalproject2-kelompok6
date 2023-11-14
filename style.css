@@ -16,7 +16,7 @@ html {
 
 :root {
     --primary: #234CAD;
-    ---secondary: #F2F6FF;
+    --secondary: #F2F6FF;
     --white: #F2F6FF;
 }
 
@@ -51,7 +51,7 @@ header section {
 }
 
 .btn-menu {
-    background-color: var(---secondary);
+    background-color: var(--secondary);
     width: 50px;
     height: 50px;
     display: flex;
@@ -130,7 +130,7 @@ section .button {
 
 .button #signUpButton {
     outline: none;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
 }
 
 /* MAIN SECTION / KONTEN */
@@ -141,7 +141,7 @@ section .button {
     height: 575px;
     margin: 100px;
     border-radius: 60px;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
     display: flex;
 }
 
@@ -170,7 +170,7 @@ section .button {
     font-weight: 700;
     border-radius: 100px;
     border: 3px solid var(--primary);
-    background-color: var(---secondary);
+    background-color: var(--secondary);
     transition: all 0.3s;
 }
 
@@ -228,7 +228,7 @@ section .button {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
     border-radius: 100px;
 }
 
@@ -247,7 +247,7 @@ section .button {
     cursor: pointer;
     background:
         radial-gradient(closest-side, white 90%, transparent 80% 100%),
-        conic-gradient(var(--primary) 25%, var(---secondary) 0);
+        conic-gradient(var(--primary) 25%, var(--secondary) 0);
 }
 
 .hero-section .card2 .card-content .text-content p:first-child,
@@ -317,7 +317,7 @@ section .button {
     height: 40px;
     border-radius: 100px;
     border: 2px solid white;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
 }
 
 .meeting-parts div:nth-child(2) {
@@ -341,7 +341,7 @@ section .button {
 .hero-section .card7 .card-content .icon {
     position: relative;
     font-weight: 700;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
 }
 
 .hero-section .card4 .card-content .icon .notif,
@@ -399,7 +399,7 @@ section .button {
 .hero-section .card5 .card-content .progress:hover {
     background:
         radial-gradient(closest-side, white 90%, transparent 80% 100%),
-        conic-gradient(var(--primary) 75%, var(---secondary) 0);
+        conic-gradient(var(--primary) 75%, var(--secondary) 0);
 }
 
 .hero-section .card5 .card-content .progress {
@@ -457,7 +457,7 @@ section .button {
     align-items: center;
     width: 100px;
     height: 100px;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
     border-radius: 100px;
 }
 
@@ -475,7 +475,7 @@ section .button {
     align-items: center;
     width: 100px;
     height: 100px;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
     border-radius: 100px;
 }
 
@@ -521,7 +521,7 @@ section .button {
     width: 575px;
     height: 575px;
     border-radius: 60px;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -550,7 +550,7 @@ section .button {
     align-items: center;
     justify-content: center;
     border-radius: 100px;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
 }
 
 .text-right .card1 .card-content .icon p,
@@ -630,7 +630,7 @@ section .button {
 }
 
 /* TEXT-CENTER ICON */
-.text-center .txt-c-container{
+.text-center .txt-c-container {
     margin-top: 150px;
     display: flex;
     justify-content: center;
@@ -669,7 +669,7 @@ section .button {
     height: 575px;
     margin: 100px;
     border-radius: 60px;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
     display: flex;
     flex-direction: column;
     /* justify-content: space-evenly; */
@@ -755,7 +755,7 @@ section .button {
     height: 40px;
     border-radius: 100px;
     border: 2px solid white;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
 }
 
 .text-center .meeting-parts div:nth-child(2) {
@@ -795,7 +795,7 @@ section .button {
     margin: 20px;
     position: relative;
     font-weight: 700;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
 }
 
 .text-center .card3 .card-content .icon p {
@@ -870,7 +870,7 @@ section .button {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
     border-radius: 100px;
 }
 
@@ -887,7 +887,7 @@ section .button {
     cursor: pointer;
     background:
         radial-gradient(closest-side, white 90%, transparent 80% 100%),
-        conic-gradient(var(--primary) 75%, var(---secondary) 0);
+        conic-gradient(var(--primary) 75%, var(--secondary) 0);
 }
 
 .text-center .card4 .card-content .progress {
@@ -921,7 +921,7 @@ section .button {
     margin: 20px;
     position: relative;
     font-weight: 700;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
 }
 
 .text-center .card5 .card-content .icon p {
@@ -994,7 +994,7 @@ section .button {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
     border-radius: 100px;
 }
 
@@ -1011,7 +1011,7 @@ section .button {
     cursor: pointer;
     background:
         radial-gradient(closest-side, white 90%, transparent 80% 100%),
-        conic-gradient(var(--primary) 25%, var(---secondary) 0);
+        conic-gradient(var(--primary) 25%, var(--secondary) 0);
 }
 
 .text-center .card6 .card-content .text-content p:first-child,
@@ -1048,7 +1048,7 @@ section .button {
     justify-content: center;
     position: relative;
     font-weight: 700;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
 }
 
 /* card 8 */
@@ -1111,7 +1111,7 @@ section .button {
     width: 575px;
     height: 575px;
     border-radius: 60px;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
     overflow: hidden;
 }
 
@@ -1129,10 +1129,10 @@ section .button {
 }
 
 .text-left .card1 .card-content div:first-child,
-.text-left .card2 .card-content div:first-child, 
-.text-left .card3 .card-content div:first-child, 
-.text-left .card4 .card-content div:first-child, 
-.text-left .card5 .card-content div:first-child, 
+.text-left .card2 .card-content div:first-child,
+.text-left .card3 .card-content div:first-child,
+.text-left .card4 .card-content div:first-child,
+.text-left .card5 .card-content div:first-child,
 .text-left .card6 .card-content div:first-child {
     display: flex;
     align-items: center;
@@ -1208,7 +1208,7 @@ section .button {
     height: 40px;
     border-radius: 100px;
     border: 2px solid white;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
 }
 
 .text-left .meeting-parts div:nth-child(2) {
@@ -1303,8 +1303,8 @@ section .button {
 }
 
 /* SECTION PRICING  */
-.pricing .pricing-container{
-    margin-top: 150px;
+.pricing .pricing-container {
+    padding-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1351,18 +1351,24 @@ section .button {
     height: 380px;
     padding: 50px 53px;
     border-radius: 60px;
-    border: 2px solid white;
-    background-color: var(---secondary);
+    transition: all 0.3s;
+}
+
+.card-pricing .card1,
+.card-pricing .card3 {
+    background-color: var(--secondary);
+}
+
+.card-pricing .card2 {
+    background-color: white;
+    outline: solid 3px var(--primary);
 }
 
 .card-pricing .card1:hover,
 .card-pricing .card2:hover,
 .card-pricing .card3:hover {
     filter: drop-shadow(3px 3px 5px #00000030);
-    transform: scale(1.1);
-    cursor: pointer;
-    outline: solid 3px var(--primary);
-    background-color: white;
+    transform: scale(1.05);
 }
 
 .card-pricing .card1 .card-content,
@@ -1407,15 +1413,20 @@ section .button {
     transition: all 0.1s;
     margin-top: 35px;
     background: white;
+    transition: all 0.3s;
+}
+
+.card-pricing .card2 .card-content button {
+    outline: solid 3px var(--primary);
+
 }
 
 .card-pricing .card1 .card-content button:hover,
 .card-pricing .card2 .card-content button:hover,
 .card-pricing .card3 .card-content button:hover {
     filter: drop-shadow(3px 3px 5px #00000030);
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer;
-    outline: solid 3px var(--primary);
 }
 
 /* NEWSLATER SIGN-UP */
@@ -1424,7 +1435,7 @@ section .button {
     height: 383px;
     margin: 150px 100px;
     border-radius: 60px;
-    background-color: var(---secondary);
+    background-color: var(--secondary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1542,36 +1553,36 @@ footer section div p:hover {
     0% {
         background:
             radial-gradient(closest-side, white 90%, transparent 80% 100%),
-            conic-gradient(var(--primary) 0%, var(---secondary) 0);
+            conic-gradient(var(--primary) 0%, var(--secondary) 0);
     }
 
     20% {
         background:
             radial-gradient(closest-side, white 90%, transparent 80% 100%),
-            conic-gradient(var(--primary) 25%, var(---secondary) 0);
+            conic-gradient(var(--primary) 25%, var(--secondary) 0);
     }
 
     40% {
         background:
             radial-gradient(closest-side, white 90%, transparent 80% 100%),
-            conic-gradient(var(--primary) 50%, var(---secondary) 0);
+            conic-gradient(var(--primary) 50%, var(--secondary) 0);
     }
 
     65% {
         background:
             radial-gradient(closest-side, white 90%, transparent 80% 100%),
-            conic-gradient(var(--primary) 75%, var(---secondary) 0);
+            conic-gradient(var(--primary) 75%, var(--secondary) 0);
     }
 
     80% {
         background:
             radial-gradient(closest-side, white 90%, transparent 80% 100%),
-            conic-gradient(var(--primary) 100%, var(---secondary) 0);
+            conic-gradient(var(--primary) 100%, var(--secondary) 0);
     }
 
     100% {
         background:
             radial-gradient(closest-side, white 90%, transparent 80% 100%),
-            conic-gradient(var(--primary) 0%, var(---secondary) 0);
+            conic-gradient(var(--primary) 0%, var(--secondary) 0);
     }
 }

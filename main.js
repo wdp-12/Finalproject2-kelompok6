@@ -23,7 +23,7 @@ buttonMenu.addEventListener('click', () => {
     buttonMenu.classList.toggle('active');
     if (buttonMenu.classList.contains('active')) {
         navLinks.style.display = 'block';
-        
+
         setTimeout(() => {
             navLinks.style.transform = 'scale(1)'
         }, 300);
@@ -36,30 +36,40 @@ buttonMenu.addEventListener('click', () => {
 });
 
 
-const pricingButton1 = document.getElementById('pricingButton1')
-const pricingButton2 = document.getElementById('pricingButton2')
-const pricingButton3 = document.getElementById('pricingButton3')
+const buttons = [...document.querySelectorAll('.card-pricing button')];
+const cards = [...document.querySelectorAll('.card-pricing .card')];
 
-pricingButton1.addEventListener('click', () => {
-    if (pricingButton1.innerText === 'Learn more') {
-        pricingButton1.innerText = 'Get started';
-    } else {
-        pricingButton1.innerText = 'Learn more';
-    }
-})
+buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        resetCardsExcept(index);
+        toggleCardColor(button, cards[index]);
+    });
+});
 
-pricingButton2.addEventListener('click', () => {
-    if (pricingButton2.innerText === 'Learn more') {
-        pricingButton2.innerText = 'Get started';
-    } else {
-        pricingButton2.innerText = 'Learn more';
-    }
-})
+function resetCardsExcept(selectedIndex) {
+    cards.forEach((card, index) => {
+        if (index !== selectedIndex) {
+            const button = buttons[index];
+            card.style.backgroundColor = "var(--secondary)";
+            card.style.outline = "none";
+            button.innerText = 'Learn more';
+            button.style.outline = "none";
+        }
+    });
+}
 
-pricingButton3.addEventListener('click', () => {
-    if (pricingButton3.innerText === 'Learn more') {
-        pricingButton3.innerText = 'Get started';
+function toggleCardColor(button, card) {
+    if (button.innerText === 'Learn more') {
+        button.innerText = 'Get started';
+        card.style.backgroundColor = "white";
+        card.style.outline = "solid 3px var(--primary)";
+        button.style.outline = "solid 3px var(--primary)";
     } else {
-        pricingButton3.innerText = 'Learn more';
+        button.innerText = 'Learn more';
+        card.style.backgroundColor = "var(--secondary)";
+        card.style.outline = "none";
+        button.style.outline = "none";
     }
-})
+}
+
+
